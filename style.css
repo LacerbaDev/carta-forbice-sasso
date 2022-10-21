@@ -1,0 +1,70 @@
+html {
+	font-size: 10px;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 100vh;
+}
+
+h1 {
+	font-size: 6rem;
+}
+
+.scelta-cpu {
+	height: 150px;
+	width: 150px;
+	font-size: 6rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.gioca-di-nuovo {
+	display: none;
+}
+
+.scelte-giocatore {
+	font-size: 6rem;
+	display: flex;
+	gap: 6.4rem;
+}
+
+.scelta {
+	appearance: none;
+	font-size: inherit;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.scelta:disabled {
+	cursor:not-allowed;
+}
+
+.scelta span {
+	display: block;
+	text-align: center;
+	pointer-events: none;
+}
+
+.scelta span:last-child {
+	font-size: 2.5rem;
+}
+
+.messaggio {
+	font-size: 4rem;
+	text-align: center;
+	height: 50px;
+}
